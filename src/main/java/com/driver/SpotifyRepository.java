@@ -286,7 +286,7 @@ public class SpotifyRepository {
 
         Song song = null;
 
-        for(Song sng : songLikeMap.keySet()){
+        for(Song sng : songs){
             if(sng.getTitle().equals(songTitle)){
                 song=sng;
                  break;
