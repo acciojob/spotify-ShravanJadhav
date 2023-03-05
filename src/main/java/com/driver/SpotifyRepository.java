@@ -238,13 +238,13 @@ public class SpotifyRepository {
         }
         Playlist playList = null;
         for(Playlist playListOne : playlists){
-            if(playListOne.getTitle().equals(playlistTitle)){
+            if(playListOne.getTitle()==playlistTitle){
                 playList = playListOne;
                 break;
             }
         }
         if(playList==null){
-            throw new Exception(" Playlist does not exist");
+            throw new Exception("Playlist does not exist");
         }
 
         if(creatorPlaylistMap.containsKey(newUser)){
